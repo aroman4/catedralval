@@ -1,0 +1,260 @@
+/*************************************************/
+/*----------------------css------------------------*/
+/*************************************************/
+/*header*/
+.banner{
+  background: url('../imagenes/oro.jpg') no-repeat;
+}
+
+#imgVirgen {
+  float:right;
+  position: absolute;
+  right:0;
+  top:0;
+  z-index: 1;
+  filter: drop-shadow(5px 5px 3px #333);
+}
+
+#imgVirgen:hover{
+ filter: drop-shadow(5px 10px 15px #fffb80);
+}
+
+#imgEscudo{
+  display: block;
+  position: relative;
+  margin: 10px;
+  filter: drop-shadow(5px 5px 3px #333);
+}
+
+.banner h1{
+  display: block;
+  font-family: "Lucida Calligraphy";
+  -webkit-text-stroke: 1px #f0f0f0;
+  font-weight: 900;
+  margin-top: 35px;
+}
+
+#tituloSecundario{
+  margin-bottom: 15px;
+}
+
+.redesHeader a{
+  color: black;
+  margin: 15px;
+}
+
+.redesHeader a:hover{
+  color: dimgray;
+}
+/*Fin header*/
+/*Menu*/
+.bg-dark{
+  background-color: black!important;
+}
+.navbar a{
+  color: lightgray!important;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link a{
+  color: white!important;
+}
+
+.navbar a:hover{
+  color: grey!important;
+}
+
+.mr-auto{
+  margin:auto;
+}
+
+.navbar-collapse .nav-item{
+  padding-left: 15px;
+  padding-right: 15px;
+  border-right: 1px solid lightgrey;
+}
+
+.nav-item:last-child{
+  border-right: none;
+}
+
+.dropdown-menu{
+  background-color: rgba(0,0,0,0.7);
+}
+
+.dropdown-item:hover{
+  background-color: #444444;
+}
+
+.dropdown-item{
+  border-bottom: 1px solid lightgrey;
+}
+
+.dropdown-item:last-child{
+  border-bottom: none;
+}
+/*fin menu*/
+
+/*section de carrusel*/
+.carrusel .carousel-inner, .carrusel .d-block{
+  height:420px;
+}
+/*fin de section del carrusel*/
+
+/*section horario*/
+.horarios { 
+  background-color: #FFFFFF;
+}
+.horarios img{
+ display: block;
+ margin: auto;
+ height: 150px
+}
+
+.horarios p{
+	color:black;
+	margin: 25px;
+}
+/*fin de horarios*/
+
+/*instagram*/
+.insta{
+  background-color: #bb9350;
+}
+
+.insta a{
+  color:black;
+}
+
+.insta .instaNombre{
+  text-align: center;
+  padding: 10px;
+}
+
+.instagramFeed{
+  position: relative;
+  width: 100%;
+}
+
+.instagramImg{
+  height: 200px;
+}
+.instagramImg:hover{
+  filter: grayscale(90%) blur(1px);
+}
+
+/*fin instagram*/
+/*youtube*/
+.tv{
+  background-color: #202020;
+}
+#youtubePlayer{
+  margin: auto;
+  display: block;
+  padding: 10px;
+}
+/*fin youtube*/
+/*redes*/
+.redes .list-group-item{
+  background-color: #bb9350;
+}
+
+.redes a{
+  color:black;
+}
+/*fin redes*/
+
+/*citas*/
+.citas {
+  border: 20px solid #bb9350;
+}
+.citas p{
+  height:170px;
+  color: black;
+  margin: 35px;
+  font-style:italic;
+  font-weight:bold;
+  font-size:2em;
+}
+.citas img{
+ display: block;
+ margin: auto;
+ height: 250px;
+}
+/*fin de citas*/
+
+/*links*/
+.links .col-md-3{
+height:200px;
+ margin: auto;
+background-color: White;
+}
+
+/*fin de links*/
+
+/*footer*/
+footer{
+  background: linear-gradient(black,white);
+}
+
+#arq{
+  margin-top: 50px;
+}
+
+.redesFooter a{
+  color: black;
+  margin: 15px;
+}
+
+.redesFooter a:hover{
+  color: dimgray;
+}
+
+#tlf{
+  display: inline-block;
+  margin-top: -50px;
+}
+
+footer #contactenos{
+  display: inline-block;
+}
+
+#contactenos{
+  margin-top: 130px;
+}
+
+#contactenos h2{
+  color: white;
+}
+
+#contactenos p{
+  font-weight: bold;
+  color: #e4b702;
+}
+
+/*fin footer*/
+/*Media Queries*/
+/*telefonos y dispositivos pequeños*/
+@media (max-width: 767.98px) {
+  .banner .col-md-2:first-child{
+    height: 180px;
+  }
+  #imgVirgen{
+    left:40%;
+  }
+  #imgVirgen img{
+    height: 200px;
+  }
+  #imgEscudo{
+    display:none;
+  }
+}
+
+/*tablets*/
+@media (max-width: 991.98px) { 
+  #contactenos{
+    margin-top: 0;
+  }
+  #tlf{
+    margin-top: 50px;
+  }
+}
